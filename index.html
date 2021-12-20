@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Calculadora</title>
+
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+		<main>
+			<section class="container">
+				<div>
+				<form name="display">
+					<input type="text" name="resultado" class="input-padrao" placeholder="0">
+				</form>
+				</div>
+				<div>
+					<input type="button" name="limpar" class="botao botaolimpar" value="C" onclick="limpar()">
+					<input type="button" name="voltar" class="botao botao-operador" value="<" onclick="apagar()">
+					<input type="button" name="divisao" class="botao botao-operador" value="÷" onclick="botoes('/')">
+					<input type="button" name="multiplica" class="botao botao-operador" value="x" onclick="botoes('*')">
+				</div>
+				<div>
+					<input type="button" name="numero7" class="botao botao-numerico" value="7" onclick="botoes(7)">
+					<input type="button" name="numero8" class="botao botao-numerico" value="8" onclick="botoes(8)">
+					<input type="button" name="numero9" class="botao botao-numerico" value="9" onclick="botoes(9)">
+					<input type="button" name="subtrai" class="botao botao-operador" value="-" onclick="botoes('-')">
+				</div>
+				<div>
+					<input type="button" name="numero4" class="botao botao-numerico" value="4" onclick="botoes(4)">
+					<input type="button" name="numero5" class="botao botao-numerico" value="5" onclick="botoes(5)">
+					<input type="button" name="numero6" class="botao botao-numerico" value="6" onclick="botoes(6)">
+					<input type="button" name="soma" class="botao botao-operador" value="+" onclick="botoes('+')">
+				</div>
+				<div>
+					<input type="button" name="numero1" class="botao botao-numerico" value="1" onclick="botoes(1)">
+					<input type="button" name="numero2" class="botao botao-numerico" value="2" onclick="botoes(2)">
+					<input type="button" name="numero3" class="botao botao-numerico" value="3" onclick="botoes(3)">
+					<input type="button" name="igual" class="botao botao-igual" value="=" onclick="calculaTotal()">
+					<input type="button" name="numero0" id="numero0" class="botao botao-numerico" value="0" onclick="botoes(0)">
+					<input type="button" name="ponto" class="botao botao-numerico" value="." onclick="botoes('.')">
+				</div>
+			</section>
+		</main>
+	</body>
+	<script src="js/calculadora.js"></script>
+</html>

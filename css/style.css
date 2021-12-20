@@ -1,0 +1,83 @@
+/*estilo para os botões da calculadora*/
+.container {
+	margin: 50px 100px;
+	border: solid 1px #000000;
+	border-radius: 8px;
+	padding: 10px;
+	width: 240px;
+	background-color: #1C1C1C;
+	box-shadow: 2px 2px 15px #000000;
+}
+
+.input-padrao { 
+	width: 91%;
+	height: 40px;
+	margin: 2px 0 5px;
+	padding: 10px;
+	font-size: 22px;
+	border-radius: 5px;
+	border: solid 1px #000000;
+	text-align: left;
+}
+
+.botao {
+	width: 57px;
+	margin: 2px auto;
+	height: 50px;
+	border: solid 1px #000000;
+	border-radius: 5px;
+	font-size: 20px;
+	background: ivory;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.botao:hover {
+	background: bisque;
+}
+
+.botaolimpar {
+	width: 57px;
+	background-color: lightcoral;
+	color: white;
+	font-weight: bold;
+}
+
+.botaolimpar:hover {
+	background: indianred;
+}
+
+.botao-igual {
+	height: 104px;
+	background-color: dodgerblue;
+	color: white;
+	float: right;
+	margin: 2px 0 0;
+	font-weight: bold;
+} 
+
+.botao-igual:hover {
+	background: royalblue;
+}
+
+.botao-numerico {
+	color: black;
+}
+
+.botao-operador{
+	background-color: slategray;
+	color: white;
+	font-weight: bold;
+}
+
+.botao-operador:hover {
+	background: darkgray;
+}
+
+#numero0 {
+	width: 118px;
+}
+
+@media screen and (max-width: auto) {
+	.container{width: auto}
+}
